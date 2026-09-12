@@ -41,7 +41,7 @@ button { font: inherit; }
 h1, h2, h3, p { margin: 0; }
 h1, h2 { font-family: 'Playfair Display', serif; }
 .hero h1 { font-size: clamp(44px, 6vw, 72px); line-height: 1.04; letter-spacing: -.03em; font-weight: 600; }
-.symphony-title { font-family: 'symphony Script', sans-serif; font-weight: 400; font-size: 14em; line-height: 1; position: absolute; left: 50%; bottom: 6%; transform: translateX(-50%); z-index: 2; color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.5); white-space: nowrap; pointer-events: none; }
+.symphony-title { font-family: 'symphony Script', sans-serif; font-weight: 400; font-size: 14em; line-height: 1; position: absolute; left: 42%; bottom: 6%; transform: translateX(-50%); z-index: 2; color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.5); white-space: nowrap; pointer-events: none; }
 .hero-name { font-size: .42em; font-weight: 600; letter-spacing: .01em; white-space: nowrap; display: inline-block; margin-top: .15em; }
 .hero-copy p { max-width: 530px; color: rgba(0, 0, 0, .82); font-size: 19px; line-height: 1.55; }
 .hero-portrait { display: flex; justify-content: center; position: relative; }
