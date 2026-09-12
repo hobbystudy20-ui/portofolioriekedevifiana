@@ -65,13 +65,14 @@ function App() {
       <main id="top">
         <section className="hero section-shell">
           <div className="hero-copy">
-            <h1><span className="symphony-title">Portofolio</span><br /><span className="hero-name">Ns. Rieke Devi Fiana, S.Tr.Kep</span></h1>
+            <h1><span className="hero-name">Ns. Rieke Devi Fiana, S.Tr.Kep</span></h1>
             <p>“Compassionate care, dedicated to healing and enriching lives through professional nursing excellence.”</p>
             <a className="cv-button dark" href="/download">Download CV Rieke Devi Fiana</a>
           </div>
           <div className="hero-portrait">
             <div className="portfolio-item">
               <img src="/files_10888456-2026-09-03T21-34-00-337Z-IMG_2382salin.png" alt="Ns. Rieke Devi Fiana saat wisuda" />
+              <span className="symphony-title">Portofolio</span>
             </div>
           </div>
         </section>
