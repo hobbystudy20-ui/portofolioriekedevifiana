@@ -89,6 +89,9 @@ function App() {
           <div className="section-heading centered"><h2>Academic Journey</h2><span className="heading-line" /></div>
           <div className="academic-grid">
             <div className="timeline">
+              <div className="academic-photo">
+                <img src="/20250924_085105.jpg" alt="Ns. Rieke Devi Fiana di Poltekkes Kemenkes Surakarta" />
+              </div>
               {education.map(([year, title, school]) => (
                 <div className="timeline-item" key={year}>
                   <span className="timeline-dot" />
