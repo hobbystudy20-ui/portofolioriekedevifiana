@@ -28,10 +28,7 @@ const navItems = [
 ];
 
 const education = [
-  ['2018 - 2022', 'Profesi Ners & Sarjana Terapan Keperawatan', 'Poltekkes Kemenkes'],
-  ['2015 - 2018', 'SMA Negeri (Science Major)', 'High School Diploma'],
-  ['2012 - 2015', 'SMP Negeri', 'Junior High School'],
-  ['2006 - 2012', 'SD Negeri', 'Primary School'],
+  ['2020 - 2025', 'Profesi Ners & Sarjana Terapan Keperawatan', 'Poltekkes Kemenkes Surakarta'],
 ];
 
 function App() {
