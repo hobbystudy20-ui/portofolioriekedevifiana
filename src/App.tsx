@@ -63,7 +63,6 @@ function App() {
         <section className="hero section-shell">
           <div className="hero-copy">
             <h1><span className="hero-name">Ns. Rieke Devi Fiana, S.Tr.Kep</span></h1>
-            <p>“Compassionate care, dedicated to healing and enriching lives through professional nursing excellence.”</p>
             <a className="cv-button dark" href="/download">Download CV Rieke Devi Fiana</a>
           </div>
           <div className="hero-portrait">
