@@ -68,6 +68,7 @@ function App() {
           <div className="hero-portrait">
             <div className="portfolio-item">
               <img src="/files_10888456-2026-09-03T21-34-00-337Z-IMG_2382salin.png" alt="Ns. Rieke Devi Fiana saat wisuda" />
+              <div className="portfolio-overlay" />
             </div>
             <span className="symphony-title">Portofolio</span>
           </div>
