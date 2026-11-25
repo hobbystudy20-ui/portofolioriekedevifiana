@@ -42,7 +42,7 @@ function App() {
             {navItems.map(([label, href], index) => (
               <a className={index === 0 ? 'active' : ''} href={href} key={label}>{label}</a>
             ))}
-            <a className="cv-button small" href="/download">Download CV</a>
+            <a className="cv-button small" href="mailto:rikedevif@gmail.com">Click For Collab or Bussines Inq</a>
           </div>
           <button className="menu-button" aria-label="Open menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -53,7 +53,7 @@ function App() {
             {navItems.map(([label, href]) => (
               <a href={href} key={label} onClick={() => setMobileMenuOpen(false)}>{label}</a>
             ))}
-            <a className="cv-button small" href="/download">Download CV</a>
+            <a className="cv-button small" href="mailto:rikedevif@gmail.com">Click For Collab or Bussines Inq</a>
           </div>
         )}
       </nav>
