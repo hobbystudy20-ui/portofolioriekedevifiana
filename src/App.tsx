@@ -131,8 +131,8 @@ function App() {
           <div className="contact-inner">
             <h2>Let's Collab!!</h2>
             <p>I'm always open to discussing new opportunities, collaborations, or ways we can work together to improve healthcare.</p>
-            <div className="contact-card"><div><Mail /><span>rieke.devifiana@example.com</span></div><div><Phone /><span>+62 812-3456-7890</span></div></div>
-            <a className="cv-button dark" href="mailto:rieke.devifiana@example.com">Reach Out Now</a>
+            <div className="contact-card"><div><Mail /><span>rikedevif@gmail.com</span></div><div><Phone /><span>+62 812-3456-7890</span></div></div>
+            <a className="cv-button dark" href="mailto:rikedevif@gmail.com">Reach Out Now</a>
           </div>
         </section>
       </main>
