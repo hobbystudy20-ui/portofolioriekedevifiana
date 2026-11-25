@@ -19,6 +19,9 @@ const graduationImages = [
   'https://lh3.googleusercontent.com/aida-public/AB6AXuApFFbr5jDByIUkHQfTCdFOik6adthHrBaNHjTrpfThaEq9OZr8N6sSsaXGsnCIp2L4JHWFGuD4pkjIEqkyzvTdst6rSt8Xnm2bBOVIKUI4YntY31-BExLFP3e-psFIZcPeAfuwZ7hc4ZyFyj0bqUwQ2NdjTFv_RXjIHo7OcFc0uXSoGxqVFjLxGzINCB7x4krYN312o7Iojq1V52r0cIlSnky6SUSvzTa_xGO8e5i1O1qJsKqNNSSj',
 ];
 
+const CONTACT_EMAIL = 'rikedevif@gmail.com';
+const MAILTO_LINK = `mailto:${CONTACT_EMAIL}?subject=Collaboration%20%26%20Business%20Inquiry&body=Hi%20Rieke%2C%0A%0AI%27d%20like%20to%20discuss%20a%20collaboration%20or%20business%20opportunity%20with%20you.%0A%0ABest%20regards%2C%0A`;
+
 const navItems = [
   ['About Me', '#about'],
   ['Academic', '#academic'],
@@ -42,7 +45,7 @@ function App() {
             {navItems.map(([label, href], index) => (
               <a className={index === 0 ? 'active' : ''} href={href} key={label}>{label}</a>
             ))}
-            <a className="cv-button small" href="mailto:rikedevif@gmail.com">Click For Collab or Bussines Inq</a>
+            <a className="cv-button small" href={MAILTO_LINK}>Click For Collab or Bussines Inq</a>
           </div>
           <button className="menu-button" aria-label="Open menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -53,7 +56,7 @@ function App() {
             {navItems.map(([label, href]) => (
               <a href={href} key={label} onClick={() => setMobileMenuOpen(false)}>{label}</a>
             ))}
-            <a className="cv-button small" href="mailto:rikedevif@gmail.com">Click For Collab or Bussines Inq</a>
+            <a className="cv-button small" href={MAILTO_LINK}>Click For Collab or Bussines Inq</a>
           </div>
         )}
       </nav>
@@ -64,7 +67,7 @@ function App() {
             <div className="portfolio-item">
               <img className="animasi-foto-otomatis" src="/files_10888456-2026-09-03T21-34-00-337Z-IMG_2382salin.png" alt="Ns. Rieke Devi Fiana saat wisuda" />
             </div>
-            <a className="cv-button dark hero-cv" href="mailto:rikedevif@gmail.com">Ns. Rieke Devi Fiana</a>
+            <a className="cv-button dark hero-cv" href={MAILTO_LINK}>Ns. Rieke Devi Fiana</a>
             <span className="symphony-lockup">
               <img className="portfolio-flower" src="/—Pngtree—pink_rose_flower_17408230.png" alt="Bunga mawar dekorasi" />
               <span className="symphony-title">Portofolio</span>
@@ -131,8 +134,8 @@ function App() {
           <div className="contact-inner">
             <h2>Let's Collab!!</h2>
             <p>I'm always open to discussing new opportunities, collaborations, or ways we can work together to improve healthcare.</p>
-            <div className="contact-card"><div><Mail /><span>rikedevif@gmail.com</span></div><div><Phone /><span>+62 812-3456-7890</span></div></div>
-            <a className="cv-button dark" href="mailto:rikedevif@gmail.com">Reach Out Now</a>
+            <div className="contact-card"><div><Mail /><a href={MAILTO_LINK}>{CONTACT_EMAIL}</a></div><div><Phone /><span>+62 812-3456-7890</span></div></div>
+            <a className="cv-button dark" href={MAILTO_LINK}>Reach Out Now</a>
           </div>
         </section>
       </main>

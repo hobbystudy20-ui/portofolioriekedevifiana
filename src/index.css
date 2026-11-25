@@ -119,6 +119,8 @@ h1, h2 { font-family: 'Playfair Display', serif; }
 .contact-card { display: inline-flex; flex-direction: column; gap: 16px; margin-bottom: 32px; padding: 27px 33px; text-align: left; border-radius: 14px; background: white; box-shadow: 0 4px 24px rgba(255, 105, 180, .08); }
 .contact-card div { display: flex; align-items: center; gap: 14px; font-size: 15px; font-weight: 500; }
 .contact-card svg { width: 20px; color: #ff69b4; }
+.contact-card a { color: inherit; text-decoration: none; transition: color .2s; }
+.contact-card a:hover { color: #ac2471; text-decoration: underline; }
 
 footer { padding: 58px 0; background: #f0eded; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
