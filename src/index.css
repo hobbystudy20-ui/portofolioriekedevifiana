@@ -136,7 +136,7 @@ footer { padding: 58px 0; background: #f0eded; }
   .hero-copy { align-items: center; }
   .hero h1 { font-size: clamp(42px, 11vw, 64px); }
   .hero-name { font-size: .38em; }
-  .symphony-title { font-size: 10em; bottom: 5%; }
+  .symphony-title { font-size: 10em; bottom: calc(5% + 3cm); }
   .hero-copy p { font-size: 17px; }
   .hero-portrait .portfolio-item { width: min(300px, 86vw); height: min(470px, 125vw); }
   .academic-grid { grid-template-columns: 1fr; gap: 42px; }
@@ -151,7 +151,7 @@ footer { padding: 58px 0; background: #f0eded; }
   .hero { padding-top: 105px; padding-bottom: 58px; }
   .hero h1 { font-size: 43px; }
   .hero-name { font-size: .34em; white-space: normal; }
-  .symphony-title { font-size: 7em; bottom: 4%; }
+  .symphony-title { font-size: 7em; bottom: calc(4% + 3cm); }
   .about, .academic, .experience, .contact { padding-top: 60px; padding-bottom: 60px; }
   .section-heading h2, .contact h2 { font-size: 35px; }
   .about-card { padding: 25px 22px; }
