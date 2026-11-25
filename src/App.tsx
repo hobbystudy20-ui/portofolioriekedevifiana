@@ -38,7 +38,6 @@ function App() {
     <div className="portfolio-page">
       <nav className="top-nav">
         <div className="nav-inner">
-          <a className="brand" href="#top">Portofolio</a>
           <div className="desktop-nav">
             {navItems.map(([label, href], index) => (
               <a className={index === 0 ? 'active' : ''} href={href} key={label}>{label}</a>
