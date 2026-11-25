@@ -118,11 +118,11 @@ function App() {
           <button className="footer-brand" onClick={() => go('home')}>Ns. Rieke Devi Fiana</button>
           <div className="footer-right">
             <div className="footer-links">
-              <a href="#contact" onClick={(e) => { e.preventDefault(); go('skills'); }}>LinkedIn</a>
+              <a href="https://www.linkedin.com/in/rieke-devi-fiana-a85aa2208" target="_blank" rel="noreferrer">LinkedIn</a>
               <a href="#contact" onClick={(e) => { e.preventDefault(); go('skills'); }}>Privacy Policy</a>
               <a href="#contact" onClick={(e) => { e.preventDefault(); go('skills'); }}>Terms of Service</a>
             </div>
-            <span>© 2024 Ns. Rieke Devi Fiana, S.Tr.Kep. All Rights Reserved.</span>
+            <span>© 2026 Ns. Rieke Devi Fiana, S.Tr.Kep. All Rights Reserved.</span>
           </div>
         </div>
       </footer>
