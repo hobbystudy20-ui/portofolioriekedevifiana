@@ -19,7 +19,7 @@ const graduationImages = [
   'https://lh3.googleusercontent.com/aida-public/AB6AXuApFFbr5jDByIUkHQfTCdFOik6adthHrBaNHjTrpfThaEq9OZr8N6sSsaXGsnCIp2L4JHWFGuD4pkjIEqkyzvTdst6rSt8Xnm2bBOVIKUI4YntY31-BExLFP3e-psFIZcPeAfuwZ7hc4ZyFyj0bqUwQ2NdjTFv_RXjIHo7OcFc0uXSoGxqVFjLxGzINCB7x4krYN312o7Iojq1V52r0cIlSnky6SUSvzTa_xGO8e5i1O1qJsKqNNSSj',
 ];
 
-const CONTACT_EMAIL = 'rikedevif@gmail.com';
+const CONTACT_EMAIL = 'riekedevif@gmail.com';
 const MAILTO_LINK = `mailto:${CONTACT_EMAIL}?subject=Collaboration%20%26%20Business%20Inquiry&body=Hi%20Rieke%2C%0A%0AI%27d%20like%20to%20discuss%20a%20collaboration%20or%20business%20opportunity%20with%20you.%0A%0ABest%20regards%2C%0A`;
 
 const navItems = [
