@@ -41,7 +41,7 @@ button { font: inherit; }
 h1, h2, h3, p { margin: 0; }
 h1, h2 { font-family: 'Playfair Display', serif; }
 .hero h1 { font-size: clamp(44px, 6vw, 72px); line-height: 1.04; letter-spacing: -.03em; font-weight: 600; }
-.symphony-title { font-family: 'symphony Script', sans-serif; font-weight: 400; font-size: 14em; line-height: 1; position: absolute; left: 50%; bottom: calc(6% + 3cm); transform: translateX(-50%); z-index: 2; color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.5); white-space: nowrap; pointer-events: none; }
+.symphony-title { font-family: 'symphony Script', sans-serif; font-weight: 400; font-size: 14em; line-height: 1; position: absolute; left: 50%; bottom: 62px; transform: translateX(-50%); z-index: 2; color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.5); white-space: nowrap; pointer-events: none; }
 .hero-name { font-size: .42em; font-weight: 600; letter-spacing: .01em; white-space: nowrap; display: inline-block; margin-top: .15em; }
 .hero-copy p { max-width: 530px; color: rgba(0, 0, 0, .82); font-size: 19px; line-height: 1.55; }
 .hero-portrait { display: flex; justify-content: center; position: relative; align-items: flex-end; padding-bottom: 30px; }
@@ -136,7 +136,7 @@ footer { padding: 58px 0; background: #f0eded; }
   .hero-copy { align-items: center; }
   .hero h1 { font-size: clamp(42px, 11vw, 64px); }
   .hero-name { font-size: .38em; }
-  .symphony-title { font-size: 10em; bottom: calc(5% + 3cm); }
+  .symphony-title { font-size: 10em; bottom: 62px; }
   .hero-copy p { font-size: 17px; }
   .hero-portrait .portfolio-item { width: min(300px, 86vw); height: min(470px, 125vw); }
   .academic-grid { grid-template-columns: 1fr; gap: 42px; }
@@ -151,7 +151,7 @@ footer { padding: 58px 0; background: #f0eded; }
   .hero { padding-top: 105px; padding-bottom: 58px; }
   .hero h1 { font-size: 43px; }
   .hero-name { font-size: .34em; white-space: normal; }
-  .symphony-title { font-size: 7em; bottom: calc(4% + 3cm); }
+  .symphony-title { font-size: 7em; bottom: 62px; }
   .about, .academic, .experience, .contact { padding-top: 60px; padding-bottom: 60px; }
   .section-heading h2, .contact h2 { font-size: 35px; }
   .about-card { padding: 25px 22px; }
