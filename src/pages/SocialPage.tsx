@@ -21,7 +21,7 @@ function SocialPage() {
           <p>I'm always open to discussing new opportunities, collaborations, or ways we can work together to improve healthcare.</p>
           <div className="contact-card">
             <div><Mail /><a href={MAILTO_LINK}>{CONTACT_EMAIL}</a></div>
-            <div><Phone /><span>+62 812-3456-7890</span></div>
+            <div><Phone /><span>0858-6570-2681</span></div>
           </div>
           <a className="cv-button dark" href={MAILTO_LINK}>Reach Out Now</a>
         </div>
