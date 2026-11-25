@@ -64,7 +64,7 @@ function App() {
             <div className="portfolio-item">
               <img className="animasi-foto-otomatis" src="/files_10888456-2026-09-03T21-34-00-337Z-IMG_2382salin.png" alt="Ns. Rieke Devi Fiana saat wisuda" />
             </div>
-            <a className="cv-button dark hero-cv" href="/download">Ns. Rieke Devi Fiana</a>
+            <a className="cv-button dark hero-cv" href="mailto:rikedevif@gmail.com">Ns. Rieke Devi Fiana</a>
             <span className="symphony-lockup">
               <img className="portfolio-flower" src="/—Pngtree—pink_rose_flower_17408230.png" alt="Bunga mawar dekorasi" />
               <span className="symphony-title">Portofolio</span>
