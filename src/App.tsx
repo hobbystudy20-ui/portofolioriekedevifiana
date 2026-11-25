@@ -27,8 +27,10 @@ const navItems = [
   ['Academic', '#academic'],
   ['Skills', '#skills'],
   ['Projects', '#projects'],
-  ['Contact', '#contact'],
+  ['Sosmed', '#skills'],
 ];
+
+const NAV_HEART = <span className="nav-heart">Rie<Heart size={13} fill="currentColor" /></span>;
 
 const education = [
   ['2020 - 2025', 'Profesi Ners & Sarjana Terapan Keperawatan', 'Poltekkes Kemenkes Surakarta'],
@@ -45,6 +47,7 @@ function App() {
             {navItems.map(([label, href], index) => (
               <a className={index === 0 ? 'active' : ''} href={href} key={label}>{label}</a>
             ))}
+            <a className="nav-heart-link" href="#about">{NAV_HEART}</a>
             <a className="cv-button small" href={MAILTO_LINK}>Click For Collab or Bussines Inq</a>
           </div>
           <button className="menu-button" aria-label="Open menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
@@ -56,6 +59,7 @@ function App() {
             {navItems.map(([label, href]) => (
               <a href={href} key={label} onClick={() => setMobileMenuOpen(false)}>{label}</a>
             ))}
+            <a className="nav-heart-link" href="#about" onClick={() => setMobileMenuOpen(false)}>{NAV_HEART}</a>
             <a className="cv-button small" href={MAILTO_LINK}>Click For Collab or Bussines Inq</a>
           </div>
         )}

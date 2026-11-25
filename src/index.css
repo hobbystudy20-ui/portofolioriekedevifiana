@@ -29,6 +29,9 @@ button { font: inherit; }
 .desktop-nav > a:not(.cv-button) { color: #564149; font-size: 24px; font-weight: 700; letter-spacing: .04em; transition: color .2s; }
 .desktop-nav > a:not(.cv-button):hover, .desktop-nav > a.active { color: #ac2471; }
 .desktop-nav > a.active { border-bottom: 2px solid #ac2471; }
+.nav-heart-link { display: inline-flex; align-items: center; }
+.nav-heart { display: inline-flex; align-items: center; gap: 2px; color: #ff69b4; font-size: 24px; font-weight: 700; letter-spacing: .04em; transition: color .2s; }
+.nav-heart-link:hover .nav-heart { color: #ac2471; }
 .cv-button { display: inline-flex; align-items: center; justify-content: center; border-radius: 999px; transition: transform .2s, box-shadow .2s, background .2s; }
 .cv-button:hover { transform: translateY(-3px); box-shadow: 0 9px 20px rgba(0, 0, 0, .13); }
 .cv-button.small { padding: 20px 44px; color: #fff; background: #ff69b4; font-size: 24px; font-weight: 700; }
