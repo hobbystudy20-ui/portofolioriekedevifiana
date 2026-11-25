@@ -1,8 +1,9 @@
-import { Play } from 'lucide-react';
+import { useRef, useState } from 'react';
+import { Play, Pause } from 'lucide-react';
 
-const graduationImages = [
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBHTMF1goBvSTYuyrrS8NauE-lFq_ahvQSalV-bdQEWheq0irJGbOyt9aC1s9H1xHc2CUX-cCNY-hZMnxJJTtkY3J_FUE7gMquOBBmX-T1_WGafdqZpUHv337Iv32eXHpEvnqUDfzV3InAfofEjtJDv7bhJ1UeWXTsi7wyTwp2Cw84Owu8SEktl_rAJ9EqhGcX_xaXeLc2mVMsHDxmjQRi2R7iLLcNzm7RvU_BO8_cw2SOloMVyb3AF',
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuApFFbr5jDByIUkHQfTCdFOik6adthHrBaNHjTrpfThaEq9OZr8N6sSsaXGsnCIp2L4JHWFGuD4pkjIEqkyzvTdst6rSt8Xnm2bBOVIKUI4YntY31-BExLFP3e-psFIZcPeAfuwZ7hc4ZyFyj0bqUwQ2NdjTFv_RXjIHo7OcFc0uXSoGxqVFjLxGzINCB7x4krYN312o7Iojq1V52r0cIlSnky6SUSvzTa_xGO8e5i1O1qJsKqNNSSj',
+const graduationVideos = [
+  { src: '/lv_7402311569859677458_20251012054256_(1).mp4', label: 'Profesi Graduation: Ns. Rieke Devi Fiana' },
+  { src: '/lv_7402311569859677458_20251012054256_(1)_(1).mp4', label: null },
 ];
 
 const education = [
@@ -10,6 +11,24 @@ const education = [
 ];
 
 function AcademicPage() {
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const [playingIndex, setPlayingIndex] = useState<number | null>(null);
+
+  const togglePlay = (index: number) => {
+    const video = videoRefs.current[index];
+    if (!video) return;
+    if (playingIndex !== null && playingIndex !== index) {
+      videoRefs.current[playingIndex]?.pause();
+    }
+    if (video.paused) {
+      video.play();
+      setPlayingIndex(index);
+    } else {
+      video.pause();
+      setPlayingIndex(null);
+    }
+  };
+
   return (
     <section className="academic section-shell" id="academic">
       <div className="section-heading centered"><h2>Academic Journey</h2><span className="heading-line" /></div>
@@ -26,11 +45,18 @@ function AcademicPage() {
           ))}
         </div>
         <div className="graduation-gallery">
-          {graduationImages.map((image, index) => (
-            <div className="video-card" key={image}>
-              <img src={image} alt={index === 0 ? 'Nursing graduation ceremony' : 'Nursing oath ceremony'} />
-              <div className="play-button"><Play size={11} fill="currentColor" /></div>
-              {index === 0 && <span className="video-label">Profesi Graduation: Ns. Rieke Devi Fiana</span>}
+          {graduationVideos.map(({ src, label }, index) => (
+            <div className="video-card" key={src} onClick={() => togglePlay(index)}>
+              <video
+                ref={(el) => { videoRefs.current[index] = el; }}
+                src={src}
+                loop
+                playsInline
+                onEnded={() => setPlayingIndex((prev) => (prev === index ? null : prev))}
+              />
+              {playingIndex !== index && <div className="play-button"><Play size={11} fill="currentColor" /></div>}
+              {playingIndex === index && <div className="play-button playing"><Pause size={11} fill="currentColor" /></div>}
+              {label && <span className="video-label">{label}</span>}
             </div>
           ))}
         </div>
