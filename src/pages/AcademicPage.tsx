@@ -45,7 +45,7 @@ function AcademicPage() {
         <div className="timeline">
           <div className="academic-photo-pair">
             <div className="academic-photo">
-              <img src="/20250924_085105.jpg" alt="Ns. Rieke Devi Fiana di Poltekkes Kemenkes Surakarta" />
+              <img src="/Salinan_dari_Carousel_Instagram_Dampingcare.jpg" alt="Dokumentasi kegiatan Dampingcare" />
             </div>
             <div className="academic-photo">
               <img src="/IMG-20240720-WA0007.jpg" alt="Ns. Rieke Devi Fiana saat wisuda" />
