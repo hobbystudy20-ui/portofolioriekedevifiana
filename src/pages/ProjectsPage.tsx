@@ -1,4 +1,4 @@
-import { BriefcaseBusiness, ExternalLink, HeartHandshake, ShieldCheck, Users } from 'lucide-react';
+import { ExternalLink, HeartHandshake } from 'lucide-react';
 
 const projects = [
   {
@@ -8,24 +8,6 @@ const projects = [
     link: 'https://dampingcare.web.id',
     linkLabel: 'dampingcare.web.id',
     description: 'Platform pendampingan kesehatan yang membantu pasien dan keluarga mendapatkan perawatan yang lebih personal, aman, dan nyaman.',
-  },
-  {
-    icon: <BriefcaseBusiness />,
-    title: 'Clinical Internship',
-    place: 'Hospital X',
-    description: 'Assisted in daily patient care, monitored vital signs, and supported senior nurses in the emergency and ICU departments.',
-  },
-  {
-    icon: <Users />,
-    title: 'Community Health Program',
-    place: 'Rural Health Center',
-    description: 'Conducted health education sessions, basic health screenings, and maternal care support for local communities.',
-  },
-  {
-    icon: <ShieldCheck />,
-    title: 'Emergency Care Workshop',
-    place: 'Regional Nursing Association',
-    description: 'Participated in advanced life support training, focusing on rapid response and critical care management.',
   },
 ];
 
