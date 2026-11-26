@@ -16,7 +16,7 @@
 - Single-page layout with sections (Academic Journey, Projects, others); modular section components.
 - Aesthetic goal: beautiful, distinctive, non-cookie-cutter, production-ready.
 - Page content font changed to a modern, readable style; navbar font intentionally preserved.
-- Navbar text size doubled (2×); navbar height adjusted to avoid clipping on desktop and mobile.
+- Navbar text size reverted to normal (1×); 2× enlargement cancelled per user request.
 
 ## Decisions, constraints & rationale
 
@@ -25,7 +25,7 @@
 - Projects section reduced to a single project: **DampingCare** (image, description, link retained).
 - Clinical Internship, Community Health Program, and Emergency Care Workshop cards removed per explicit user instruction.
 - No UI/theme/icon packages beyond Lucide React unless explicitly requested.
-- Typography update applied globally except navbar; navbar font unchanged, only its text size enlarged 2× with height adjustment.
+- Typography update applied globally except navbar; navbar font unchanged, text size at normal (1×).
 
 ## Open questions & assumptions
 
