@@ -3,7 +3,14 @@ import { Play, Pause } from 'lucide-react';
 
 const graduationVideos = [
   { src: '/lv_7402311569859677458_20251012054256_(1).mp4', label: 'Profesi Graduation: Ns. Rieke Devi Fiana' },
-  { src: '/lv_7402311569859677458_20251012054256_(1)_(1).mp4', label: null },
+];
+
+const academicPhotos = [
+  { src: '/4.png', alt: 'Clinical Practice of Nursing pada tahap D4' },
+  { src: '/5.png', alt: 'Clinical Practice of Nursing pada tahap D4' },
+  { src: '/6.png', alt: 'Clinical Practice of Nursing pada tahap D4' },
+  { src: '/7.png', alt: 'Clinical Practice of Nursing pada tahap D4' },
+  { src: '/8.png', alt: 'Sertifikasi Basic Trauma Cardiac Life Support' },
 ];
 
 const education = [
@@ -59,6 +66,13 @@ function AcademicPage() {
               {label && <span className="video-label">{label}</span>}
             </div>
           ))}
+          <div className="academic-photo-grid">
+            {academicPhotos.map(({ src, alt }) => (
+              <div className="academic-gallery-card" key={src}>
+                <img src={src} alt={alt} loading="lazy" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
