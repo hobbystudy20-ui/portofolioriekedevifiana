@@ -15,6 +15,8 @@
 - Framework: Vite + React (JSX), Tailwind CSS, Lucide React icons; `@/` alias for `src/`.
 - Single-page layout with sections (Academic Journey, Projects, others); modular section components.
 - Aesthetic goal: beautiful, distinctive, non-cookie-cutter, production-ready.
+- Page content font changed to a modern, readable style; navbar font intentionally preserved.
+- Navbar text size doubled (2×); navbar height adjusted to avoid clipping on desktop and mobile.
 
 ## Decisions, constraints & rationale
 
@@ -23,9 +25,11 @@
 - Projects section reduced to a single project: **DampingCare** (image, description, link retained).
 - Clinical Internship, Community Health Program, and Emergency Care Workshop cards removed per explicit user instruction.
 - No UI/theme/icon packages beyond Lucide React unless explicitly requested.
+- Typography update applied globally except navbar; navbar font unchanged, only its text size enlarged 2× with height adjustment.
 
 ## Open questions & assumptions
 
 - Assumption: portfolio language is English/Indonesian; user communicates in Indonesian — UI copy language not yet confirmed.
 - Other portfolio sections (experience, skills, contact) content and structure not yet specified.
 - DampingCare project details (full description, tech stack, live/demo links) may need further elaboration.
+- Specific content font family name not recorded; verify if consistent typography reference is needed later.
