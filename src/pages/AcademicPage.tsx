@@ -43,8 +43,13 @@ function AcademicPage() {
       <div className="section-heading centered"><h2>Academic Journey</h2><span className="heading-line" /></div>
       <div className="academic-grid">
         <div className="timeline">
-          <div className="academic-photo">
-            <img src="/20250924_085105.jpg" alt="Ns. Rieke Devi Fiana di Poltekkes Kemenkes Surakarta" />
+          <div className="academic-photo-pair">
+            <div className="academic-photo">
+              <img src="/20250924_085105.jpg" alt="Ns. Rieke Devi Fiana di Poltekkes Kemenkes Surakarta" />
+            </div>
+            <div className="academic-photo">
+              <img src="/IMG-20240720-WA0007.jpg" alt="Ns. Rieke Devi Fiana saat wisuda" />
+            </div>
           </div>
           {education.map(([year, title, school]) => (
             <div className="timeline-item" key={year}>
