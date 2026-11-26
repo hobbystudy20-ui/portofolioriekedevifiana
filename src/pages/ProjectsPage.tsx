@@ -3,6 +3,7 @@ import { BriefcaseBusiness, ExternalLink, HeartHandshake, ShieldCheck, Users } f
 const projects = [
   {
     icon: <HeartHandshake />,
+    image: '/Salinan_dari_Carousel_Instagram_Dampingcare.jpg',
     title: 'DampingCare',
     link: 'https://dampingcare.web.id',
     linkLabel: 'dampingcare.web.id',
@@ -35,6 +36,7 @@ function ProjectsPage() {
       <div className="experience-grid">
         {projects.map((project) => (
           <article className="experience-card" key={project.title}>
+            {project.image && <img className="experience-image" src={project.image} alt={`${project.title} project`} />}
             <div className="experience-icon">{project.icon}</div>
             <h3>{project.title}</h3>
             {project.place && <p className="place">{project.place}</p>}

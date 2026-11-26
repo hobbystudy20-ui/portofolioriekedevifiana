@@ -108,6 +108,7 @@ h1, h2 { font-family: 'Playfair Display', serif; }
 .experience .heading-line { background: #ff69b4; }
 .experience-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
 .experience-card { min-height: 250px; padding: 30px; border-radius: 14px; background: white; box-shadow: 0 4px 24px rgba(255, 105, 180, .08); transition: transform .2s, box-shadow .2s; }
+.experience-image { width: calc(100% + 60px); height: 150px; display: block; margin: -30px -30px 24px; object-fit: cover; border-radius: 14px 14px 0 0; }
 .experience-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(0,0,0,.1); }
 .experience-icon { color: #ff69b4; margin-bottom: 20px; }
 .experience-icon svg { width: 28px; height: 28px; }
@@ -181,5 +182,6 @@ footer { padding: 58px 0; background: #f0eded; }
   .academic-photo-grid { grid-template-columns: 1fr; }
   .academic-gallery-card { aspect-ratio: 16 / 10; }
   .experience-card { min-height: auto; padding: 25px; }
+  .experience-image { width: calc(100% + 50px); margin: -25px -25px 24px; }
   .footer-links { flex-wrap: wrap; justify-content: center; }
 }
