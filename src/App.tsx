@@ -1,6 +1,5 @@
 import { useState, useEffect, type ReactNode } from 'react';
 import { Heart, Menu, X } from 'lucide-react';
-import AboutPage from '@/pages/AboutPage';
 import AcademicPage from '@/pages/AcademicPage';
 import ProjectsPage from '@/pages/ProjectsPage';
 import SocialPage from '@/pages/SocialPage';
@@ -8,11 +7,10 @@ import SocialPage from '@/pages/SocialPage';
 const CONTACT_EMAIL = 'riekedevif@gmail.com';
 const MAILTO_LINK = `mailto:${CONTACT_EMAIL}?subject=Collaboration%20%26%20Business%20Inquiry&body=Hi%20Rieke%2C%0A%0AI%27d%20like%20to%20discuss%20a%20collaboration%20or%20business%20opportunity%20with%20you.%0A%0ABest%20regards%2C%0A`;
 
-export type PageKey = 'home' | 'about' | 'academic' | 'projects' | 'skills' | 'contact';
+export type PageKey = 'home' | 'academic' | 'projects' | 'skills' | 'contact';
 
 const navItems: Array<[string, PageKey]> = [
   ['Home', 'home'],
-  ['About Me', 'about'],
   ['Academic', 'academic'],
   ['Projects', 'projects'],
   ['Sosmed', 'skills'],
@@ -22,7 +20,6 @@ const NAV_HEART = <span className="nav-heart">Rie<Heart size={13} fill="currentC
 
 const pages: Record<PageKey, ReactNode> = {
   home: null,
-  about: <AboutPage />,
   academic: <AcademicPage />,
   projects: <ProjectsPage />,
   skills: <SocialPage />,
