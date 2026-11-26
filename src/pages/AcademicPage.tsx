@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { Play, Pause } from 'lucide-react';
+import { Play, Pause, X } from 'lucide-react';
 
 const graduationVideos = [
   { src: '/lv_7402311569859677458_20251012054256_(1).mp4', label: 'Profesi Graduation: Ns. Rieke Devi Fiana' },
@@ -22,6 +22,7 @@ const education = [
 function AcademicPage() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
+  const [selectedPhoto, setSelectedPhoto] = useState<{ src: string; alt: string } | null>(null);
 
   const togglePlay = (index: number) => {
     const video = videoRefs.current[index];
@@ -72,11 +73,22 @@ function AcademicPage() {
             {academicPhotos.map(({ src, alt }) => (
               <div className="academic-gallery-card" key={src}>
                 <img src={src} alt={alt} loading="lazy" />
+                <button className="view-photo-button" type="button" onClick={() => setSelectedPhoto({ src, alt })}>
+                  View
+                </button>
               </div>
             ))}
           </div>
         </div>
       </div>
+      {selectedPhoto && (
+        <div className="photo-lightbox" role="dialog" aria-modal="true" aria-label="Academic photo viewer" onClick={() => setSelectedPhoto(null)}>
+          <button className="lightbox-close" type="button" aria-label="Close photo viewer" onClick={() => setSelectedPhoto(null)}>
+            <X size={20} />
+          </button>
+          <img src={selectedPhoto.src} alt={selectedPhoto.alt} onClick={(event) => event.stopPropagation()} />
+        </div>
+      )}
     </section>
   );
 }
