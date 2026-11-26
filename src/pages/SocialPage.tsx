@@ -1,4 +1,4 @@
-import { Instagram, Mail, MessageCircle, Phone, Sparkles } from 'lucide-react';
+import { Instagram, Mail, MessageCircle, Phone } from 'lucide-react';
 
 const CONTACT_EMAIL = 'riekedevif@gmail.com';
 const MAILTO_LINK = `mailto:${CONTACT_EMAIL}?subject=Collaboration%20%26%20Business%20Inquiry&body=Hi%20Rieke%2C%0A%0AI%27d%20like%20to%20discuss%20a%20collaboration%20or%20business%20opportunity%20with%20you.%0A%0ABest%20regards%2C%0A`;
@@ -9,9 +9,8 @@ function SocialPage() {
       <section className="social section-shell" id="skills">
         <h2>Connect With Me</h2>
         <div className="social-links">
-          <a href="#contact" aria-label="Instagram"><Instagram /></a>
-          <a href="#contact" aria-label="TikTok"><Sparkles /></a>
-          <a href="#contact" aria-label="Threads"><MessageCircle /></a>
+          <a href="https://instagram.com/rieke.df" target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram /></a>
+          <a href="https://www.tiktok.com/@itsmenersrieke" target="_blank" rel="noreferrer" aria-label="TikTok"><MessageCircle /></a>
         </div>
       </section>
 
