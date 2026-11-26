@@ -11,6 +11,8 @@ const academicPhotos = [
   { src: '/6.png', alt: 'Clinical Practice of Nursing pada tahap D4' },
   { src: '/7.png', alt: 'Clinical Practice of Nursing pada tahap D4' },
   { src: '/8.png', alt: 'Sertifikasi Basic Trauma Cardiac Life Support' },
+  { src: '/9.png', alt: 'Dokumentasi akademik dan praktik keperawatan' },
+  { src: '/10.png', alt: 'Dokumentasi akademik dan praktik keperawatan' },
 ];
 
 const education = [
